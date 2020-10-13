@@ -1,0 +1,1396 @@
+.container {
+    margin: 0 auto;
+    @include xs {
+        max-width: calc(98% - 16px);
+    }
+    @include lg {
+        max-width: 1200px;
+    }
+}
+
+header {
+    background: #ffffff;
+    .top-header {
+        background: url(//cdn.shopify.com/s/files/1/0278/0859/6071/files/top-panel_9561e9e9-68c6-4b7c-ac79-08464bcd50cc_x150.png?v=1575643857) #f00432 no-repeat center;
+        .container {
+            padding: 16px 0px;
+            font-family: 'Fredoka One', sans-serif;
+            h2 {
+                color: #ffffff;
+                font-size: 30px;
+                line-height: 37px;
+                font-weight: 400;
+                text-align: center;
+                padding-left: 60px;
+                a {
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #34AE6E;
+                    border-color: #34AE6E;
+                    border-bottom: 1px solid #34AE6E;
+                    font-weight: 400;
+                    text-align: center;
+                    transition: border 0.2s linear;
+                    &:hover {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+    .desktop-header {
+        .container {
+            position: relative;
+            .content-header {
+                .menu {
+                    margin-top: 18px;
+                    line-height: 22px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    nav {
+                        >ul {
+                            >li {
+                                padding-right: 15px;
+                                &:hover {
+                                    a {
+                                        color: #34AE6E;
+                                    }
+                                    >.dropdown {
+                                        display: block;
+                                        animation: fadeIn 1s forwards;
+                                    }
+                                    >.dropdown-2 {
+                                        display: block;
+                                        animation: fadeIn 1s forwards;
+                                    }
+                                }
+                                a {
+                                    text-transform: uppercase;
+                                    color: #373E48;
+                                    font-weight: 400;
+                                    padding-bottom: 10px;
+                                }
+                                >.dropdown {
+                                    transition: all 0.25s;
+                                    display: none;
+                                    overflow: auto;
+                                    width: 100%;
+                                    min-height: 200px;
+                                    box-shadow: 0 0 10px 0 #e9e7e7;
+                                    padding: 33px 39px 39px;
+                                    background: #ffffff;
+                                    position: absolute;
+                                    z-index: 10;
+                                    top: 32px;
+                                    left: 0;
+                                    a {
+                                        &.title-text {
+                                            font-size: 14px;
+                                            line-height: 24px;
+                                            padding-bottom: 8px;
+                                            font-weight: 700;
+                                            font-family: 'Fredoka One', sans-serif;
+                                            color: #373e48;
+                                        }
+                                        &:hover {
+                                            transition: all 0.25s;
+                                            &.title-text {
+                                                color: #34AE6E;
+                                            }
+                                        }
+                                    }
+                                    .submenu-hover {
+                                        &:hover {
+                                            a {
+                                                color: #34AE6E;
+                                            }
+                                        }
+                                        .submenu {
+                                            >li {
+                                                position: relative;
+                                                display: block;
+                                                margin: 5px 0px;
+                                                >a {
+                                                    &:hover {
+                                                        color: #34AE6E;
+                                                        img {
+                                                            top: 0;
+                                                            opacity: 1;
+                                                            z-index: 10;
+                                                        }
+                                                    }
+                                                    color: #777777;
+                                                    font-size: 14px;
+                                                    line-height: 22px;
+                                                    padding: 1px 23px 1px 0px;
+                                                    font-family: 'Hind',
+                                                    sans-serif;
+                                                    font-size: 14px;
+                                                    font-weight: 400;
+                                                    text-transform: none;
+                                                    span {
+                                                        &.popular,
+                                                        &.modern {
+                                                            padding: 0px 4px;
+                                                            background: #fdbc20;
+                                                            color: #ffffff;
+                                                            font-size: 12px;
+                                                            border-radius: 2px;
+                                                        }
+                                                        &.new {
+                                                            padding: 0px 4px;
+                                                            background: #03a9f5;
+                                                            color: #ffffff;
+                                                            font-size: 12px;
+                                                            border-radius: 2px;
+                                                        }
+                                                    }
+                                                    img {
+                                                        position: absolute;
+                                                        top: -20px;
+                                                        right: -20px;
+                                                        max-width: 141px;
+                                                        opacity: 0;
+                                                        box-shadow: 0 0 10px #e9e7e7;
+                                                        transition: all 0.25s;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                >.dropdown-2 {
+                                    transition: all 0.25s;
+                                    display: none;
+                                    width: 280px;
+                                    background: #ffffff;
+                                    box-shadow: 0 0 10px 0 #e9e7e7;
+                                    padding: 33px 5px 27px 39px;
+                                    position: absolute;
+                                    top: 32px;
+                                    margin-left: -30px;
+                                    z-index: 10;
+                                    ul {
+                                        margin-bottom: 30px;
+                                    }
+                                    a {
+                                        color: #777777;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        padding: 1px 23px 1px 0px;
+                                        font-family: 'Hind', sans-serif;
+                                        font-weight: 400;
+                                        text-transform: none;
+                                        transition: all 0.25s;
+                                        &.title-text-2 {
+                                            font-size: 14px;
+                                            line-height: 24px;
+                                            padding-bottom: 8px;
+                                            font-weight: 700;
+                                            font-family: 'Fredoka One', sans-serif;
+                                            color: #373e48;
+                                            transition: all 0.25s;
+                                        }
+                                        &:hover {
+                                            color: #34AE6E;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .info-sign {
+                        .account {
+                            margin-right: 40px;
+                            a {
+                                color: #373E48;
+                                padding-right: 5px;
+                                &:hover {
+                                    color: #34AE6E;
+                                }
+                            }
+                            span {
+                                color: #999999;
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                    .currency {
+                        .dollar-sign {
+                            position: relative;
+                            right: 15px;
+                            button {
+                                cursor: pointer;
+                                color: #999999;
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 3px;
+                                    left: -15px;
+                                    width: 1px;
+                                    height: 14px;
+                                    background: #999999;
+                                }
+                                &::after {
+                                    content: '\f078';
+                                    font-family: 'Font Awesome 5 Free';
+                                    font-weight: bold;
+                                    position: absolute;
+                                    font-size: 14px;
+                                    top: 0px;
+                                    right: -20px;
+                                    color: #999999;
+                                }
+                            }
+                            .dropdown-inner {
+                                display: none;
+                                width: 220px;
+                                right: 0;
+                                top: 30px;
+                                background: #ffffff;
+                                box-shadow: 0 0 10px 0 #e9e7e7;
+                                padding: 33px 5px 27px 39px;
+                                position: absolute;
+                                z-index: 10;
+                                li {
+                                    a {
+                                        color: #373E48;
+                                        &:hover {
+                                            color: #34AE6E;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .logo-info {
+                    margin-top: 15px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    .info-phone {
+                        p {
+                            color: #373E48;
+                            font-weight: 400;
+                            line-height: 15px;
+                            font-size: 14px;
+                            text-align: right;
+                            &.phone {
+                                font-family: 'Fredoka One', sans-serif;
+                                font-weight: 700;
+                                font-size: 26px;
+                                line-height: 22px;
+                                padding-bottom: 7px;
+                            }
+                        }
+                    }
+                    .compare {
+                        margin-left: 48px;
+                        a {
+                            color: #34AE6E;
+                            i {
+                                font-size: 30px;
+                            }
+                            span {
+                                margin-left: 7px;
+                                font-size: 14px;
+                                line-height: 15px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                    .wishlist {
+                        margin-left: 19px;
+                        a {
+                            color: #34AE6E;
+                            i {
+                                font-size: 30px;
+                            }
+                            span {
+                                margin-left: 7px;
+                                font-size: 14px;
+                                line-height: 15px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                    .cart-shop {
+                        position: relative;
+                        .cart-products {
+                            margin-left: 19px;
+                            button {
+                                color: #f00432;
+                                position: relative;
+                                cursor: pointer;
+                                i {
+                                    font-size: 30px;
+                                }
+                                span {
+                                    margin-left: 7px;
+                                    font-size: 14px;
+                                    line-height: 15px;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                }
+                                .quantity-item {
+                                    display: none;
+                                    position: absolute;
+                                    top: -5px;
+                                    left: 10px;
+                                    width: 21px;
+                                    height: 21px;
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                    background: #34AE6E;
+                                    color: #ffffff;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .dropdown-cart {
+                                display: none;
+                                max-height: 700px;
+                                width: 280px;
+                                background: #ffffff;
+                                position: absolute;
+                                right: 0;
+                                top: 100%;
+                                z-index: 99;
+                                border-radius: 6px;
+                                box-shadow: 0 0 10px #999999;
+                                padding: 26px 20px 23px;
+                                .cart-item {
+                                    position: relative;
+                                    .no-product {
+                                        position: absolute;
+                                        z-index: 100;
+                                        cursor: pointer;
+                                        // display: none;
+                                        width: 100%;
+                                        height: 100%;
+                                        padding: 21px 20px 19px;
+                                        text-align: center;
+                                        background: #ffffff;
+                                        .fas {
+                                            font-size: 50px;
+                                            padding-top: 20px;
+                                            color: #999999;
+                                        }
+                                        p {
+                                            font-size: 16px;
+                                            padding: 30px 0;
+                                            color: #999999;
+                                        }
+                                    }
+                                    .cart-list {
+                                        overflow-y: auto;
+                                        max-height: 380px;
+                                        .product-content {
+                                            img {
+                                                max-width: 67px;
+                                            }
+                                            h5 {
+                                                a {
+                                                    font-family: 'Hind', sans-serif;
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    line-height: 22px;
+                                                    transition: all 0.3s;
+                                                    color: #f00432;
+                                                    &:hover {
+                                                        color: #34AE6E;
+                                                    }
+                                                }
+                                            }
+                                            .cart-quantity {
+                                                color: #999999;
+                                                font-size: 14px;
+                                            }
+                                            .cart-price {
+                                                color: #f00432;
+                                                font-size: 14px;
+                                                font-weight: 700;
+                                            }
+                                            button {
+                                                position: relative;
+                                                font-size: 20px;
+                                                cursor: pointer;
+                                                transition: all .4s;
+                                                i {
+                                                    position: absolute;
+                                                    right: 0;
+                                                    top: -10px;
+                                                    font-size: 16px;
+                                                    color: #f00432;
+                                                    transition: all 0.3s;
+                                                    &:hover {
+                                                        color: #34AE6E;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .cart-total {
+                                        margin-top: 20px;
+                                        border-top: 1px solid #e9e7e7;
+                                        padding: 10px 5px;
+                                        .tt-text {
+                                            font-weight: 700;
+                                            color: #f00432;
+                                            font-size: 14px;
+                                            font-family: 'Fredoka One', sans-serif;
+                                        }
+                                        .sum-total {
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                            color: #f00432;
+                                        }
+                                    }
+                                    .cart-checks {
+                                        margin-top: 22px;
+                                        margin-bottom: 13px;
+                                        .check-agreeItem {
+                                            font-size: 20px;
+                                            cursor: pointer;
+                                        }
+                                        label {
+                                            font-size: 12px;
+                                            padding-left: 10px;
+                                            cursor: pointer;
+                                            color: #f00432;
+                                            transition: all 0.3s;
+                                            &:hover {
+                                                color: #373E48;
+                                            }
+                                        }
+                                    }
+                                    .check-out {
+                                        border-radius: 6px;
+                                        background: #34ae6e;
+                                        font-family: 'Fredoka One', sans-serif;
+                                        color: #ffffff;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        position: relative;
+                                        outline: none;
+                                        padding: 6px 31px 4px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        text-align: center;
+                                        height: 40px;
+                                        opacity: 0.5;
+                                        transition: all 0.3s;
+                                    }
+                                    .view-cart {
+                                        margin-top: 15px;
+                                        text-align: center;
+                                        .btn-viewCart {
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                            color: #34AE6E;
+                                            &:hover {
+                                                color: #f00432;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .search-header {
+                margin-top: 15px;
+                .btn-cate {
+                    width: 100%;
+                    height: 50px;
+                    font-family: 'Fredoka One', sans-serif;
+                    font-size: 26px;
+                    line-height: 22px;
+                    padding: 12px 20px 14px 20px;
+                    font-weight: 700;
+                    color: #ffffff;
+                    background: #f00432;
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                    text-align: left;
+                }
+                .search-group {
+                    position: relative;
+                    form {
+                        position: relative;
+                        button {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 45px;
+                            height: 50px;
+                            padding: 5px 20px 3px;
+                            font-size: 18px;
+                            color: #999999;
+                            font-weight: 700;
+                        }
+                        input {
+                            width: 100%;
+                            height: 50px;
+                            border-radius: 6px;
+                            font-family: 'Hind', sans-serif;
+                            padding: 3px 10px 2px 50px;
+                            border: 1px solid #34ae6e;
+                            color: #777777;
+                            background: #f7f8fa;
+                            font-size: 18px;
+                        }
+                    }
+                    .search-list {
+                        display: none;
+                        position: absolute;
+                        z-index: 88;
+                        width: 100%;
+                        max-height: 500px;
+                        overflow: auto;
+                        top: 100%;
+                        left: 0;
+                        background: #ffffff;
+                        box-shadow: 0 0 10px #999999;
+                        padding: 20px;
+                        ul {
+                            li {
+                                cursor: pointer;
+                                padding: 10px;
+                                a {
+                                    img {
+                                        width: 50px;
+                                        border-radius: 6px;
+                                        border: 1px solid #e9e7e7;
+                                        margin-right: 10px;
+                                    }
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    font-weight: 600;
+                                    color: #373E48;
+                                }
+                                &:hover {
+                                    background: #e9e7e7;
+                                    a {
+                                        color: #34AE6E;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.opacity-tt {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
+.header-2 {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 99;
+    box-shadow: 0 0px 8px #777777;
+    .container {
+        position: relative;
+        padding: 6px 0;
+        .header-left {
+            .logo {
+                margin-right: 30px;
+                img {
+                    width: 95px;
+                }
+            }
+            .categories-checks {
+                margin-right: 30px;
+                position: relative;
+                .check-dropdown {
+                    position: relative;
+                    background: #f00432;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    left: 20px;
+                    font-family: 'Fredoka One', sans-serif;
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: 700;
+                    padding: 10px 95px 10px 20px;
+                    transition: all 0.25s;
+                }
+                .dropdown-categories {
+                    width: 100%;
+                    position: absolute;
+                    top: 100%;
+                    left: 20px;
+                    display: none;
+                    z-index: 99;
+                    background: #ffffff;
+                    border-bottom-left-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    >ul {
+                        >li {
+                            margin: 0px 20px;
+                            padding: 5px 0px;
+                            border-bottom: 1px solid #e9e7e7;
+                            cursor: pointer;
+                            &:hover {
+                                a {
+                                    color: #34AE6E;
+                                }
+                                .dropdown-3 {
+                                    visibility: visible;
+                                    // display: inline-block;
+                                    opacity: 1;
+                                    left: 100%;
+                                }
+                            }
+                            &.top-menu {
+                                a {
+                                    span {
+                                        float: right;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            &.bottom-menu {
+                                a {
+                                    color: #f00432 !important;
+                                }
+                            }
+                            >a {
+                                font-size: 14px;
+                                // line-height: 14px;
+                                font-weight: 400;
+                                color: #373E48;
+                            }
+                            >.dropdown-3 {
+                                visibility: hidden;
+                                position: absolute;
+                                top: 0px;
+                                width: 622px;
+                                left: 105%;
+                                opacity: 0;
+                                background: #11553C;
+                                border-radius: 6px;
+                                box-shadow: 0px 0px 10px #e9e7e7;
+                                margin-left: 4px;
+                                padding: 20px 40px 31px;
+                                z-index: 99;
+                                transition: all 0.25s;
+                                h6 {
+                                    a {
+                                        color: #ffffff;
+                                        font-size: 26px;
+                                        line-height: 27px;
+                                        padding-bottom: 8px;
+                                        font-weight: 700;
+                                        font-family: "Fredoka One", sans-serif;
+                                        &:hover {
+                                            color: #34AE6E;
+                                        }
+                                    }
+                                }
+                                >ul {
+                                    margin-top: 10px;
+                                    >li {
+                                        a {
+                                            color: #ffffff;
+                                            font-size: 16px;
+                                            line-height: 27px;
+                                            font-weight: 400;
+                                            &:hover {
+                                                color: #34AE6E;
+                                            }
+                                        }
+                                    }
+                                }
+                                a {
+                                    img {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        width: 200px;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .menu-2 {
+                nav {
+                    >ul {
+                        >li {
+                            padding-right: 15px;
+                            &:hover {
+                                transition: all 0.25s;
+                                a {
+                                    color: #34AE6E;
+                                }
+                                >.dropdown {
+                                    display: inline-block;
+                                    animation: fadeIn 1s forwards;
+                                }
+                                >.dropdown-2 {
+                                    display: inline-block;
+                                    animation: fadeIn 1s forwards;
+                                }
+                            }
+                            a {
+                                text-transform: uppercase;
+                                color: #373E48;
+                                font-weight: 400;
+                                padding-bottom: 10px;
+                                font-size: 14px;
+                            }
+                            >.dropdown {
+                                display: none;
+                                width: 100%;
+                                overflow: auto;
+                                box-shadow: 0 0 10px 0 #e9e7e7;
+                                padding: 33px 39px 39px;
+                                background: #ffffff;
+                                position: absolute;
+                                z-index: 10;
+                                bottom: 0;
+                                left: 0;
+                                transform: translateY(100%);
+                                min-height: 200px;
+                                a {
+                                    &.title-text {
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        padding-bottom: 8px;
+                                        font-weight: 700;
+                                        font-family: 'Fredoka One', sans-serif;
+                                        color: #373e48;
+                                    }
+                                    &:hover {
+                                        transition: all 0.25s;
+                                        &.title-text {
+                                            color: #34AE6E;
+                                        }
+                                    }
+                                }
+                                .submenu-hover {
+                                    &:hover {
+                                        a {
+                                            color: #34AE6E;
+                                        }
+                                    }
+                                    .submenu {
+                                        >li {
+                                            position: relative;
+                                            display: block;
+                                            margin: 5px 0px;
+                                            >a {
+                                                &:hover {
+                                                    color: #34AE6E;
+                                                    img {
+                                                        top: 0;
+                                                        opacity: 1;
+                                                        z-index: 10;
+                                                    }
+                                                }
+                                                color: #777777;
+                                                font-size: 14px;
+                                                line-height: 22px;
+                                                padding: 1px 23px 1px 0px;
+                                                font-family: 'Hind',
+                                                sans-serif;
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                text-transform: none;
+                                                span {
+                                                    &.popular,
+                                                    &.modern {
+                                                        padding: 0px 4px;
+                                                        background: #fdbc20;
+                                                        color: #ffffff;
+                                                        font-size: 12px;
+                                                        border-radius: 2px;
+                                                    }
+                                                    &.new {
+                                                        padding: 0px 4px;
+                                                        background: #03a9f5;
+                                                        color: #ffffff;
+                                                        font-size: 12px;
+                                                        border-radius: 2px;
+                                                    }
+                                                }
+                                                img {
+                                                    position: absolute;
+                                                    top: -20px;
+                                                    right: -20px;
+                                                    max-width: 141px;
+                                                    opacity: 0;
+                                                    box-shadow: 0 0 10px #e9e7e7;
+                                                    transition: all 0.25s;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            >.dropdown-2 {
+                                display: none;
+                                width: 280px;
+                                background: #ffffff;
+                                box-shadow: 0 0 10px 0 #e9e7e7;
+                                padding: 33px 5px 27px 39px;
+                                position: absolute;
+                                bottom: 0;
+                                margin-left: -100px;
+                                z-index: 10;
+                                transform: translateY(100%);
+                                ul {
+                                    margin-bottom: 30px;
+                                }
+                                a {
+                                    color: #777777;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    padding: 1px 23px 1px 0px;
+                                    font-family: 'Hind', sans-serif;
+                                    font-weight: 400;
+                                    text-transform: none;
+                                    transition: all 0.25s;
+                                    &.title-text-2 {
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        padding-bottom: 8px;
+                                        font-weight: 700;
+                                        font-family: 'Fredoka One', sans-serif;
+                                        color: #373e48;
+                                        transition: all 0.25s;
+                                    }
+                                    &:hover {
+                                        color: #34AE6E;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .categories-checks {
+                input {
+                    width: 0px;
+                }
+                label {
+                    background: #f00432;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    left: 20px;
+                    font-family: 'Fredoka One', sans-serif;
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: 700;
+                    padding: 10px 95px 10px 20px;
+                }
+            }
+        }
+        .header-right {
+            a {
+                i {
+                    color: #777777;
+                    font-size: 18px;
+                }
+                &:hover {
+                    i {
+                        color: #34AE6E;
+                    }
+                }
+            }
+            label {
+                cursor: pointer;
+                i {
+                    color: #777777;
+                    font-size: 18px;
+                }
+                &:hover {
+                    i {
+                        color: #34AE6E;
+                    }
+                }
+            }
+            .search-icon {
+                #search-check {
+                    &:checked {
+                        ~.dropdown-search {
+                            visibility: visible;
+                            transform: translateY(0);
+                        }
+                    }
+                }
+                input {
+                    width: 0;
+                }
+                .dropdown-search {
+                    visibility: hidden;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background: #ffffff;
+                    color: #777777;
+                    box-shadow: 0px 0px 10px #e9e7e7;
+                    z-index: 99;
+                    transform: translateY(-100%);
+                    transition: all 0.25s;
+                    p {
+                        margin-top: 20px;
+                    }
+                    form {
+                        position: relative;
+                        margin-bottom: 30px;
+                        input {
+                            width: 100%;
+                            background: transparent;
+                            font-size: 24px;
+                            font-weight: 700;
+                            border-bottom: 1px solid #eceaea;
+                            padding: 11px 12px 10px 0px;
+                            font-family: 'Fredoka One', sans-serif;
+                            text-transform: uppercase;
+                            color: #373e48;
+                            margin-top: 10px;
+                        }
+                        button {
+                            position: absolute;
+                            top: 25px;
+                            right: 5px;
+                            cursor: pointer;
+                            i {
+                                font-size: 20px;
+                                color: #373E48;
+                                &:hover {
+                                    color: #34AE6E;
+                                }
+                            }
+                        }
+                        label {
+                            position: absolute;
+                            top: -20px;
+                            right: 5px;
+                            cursor: pointer;
+                            i {
+                                font-size: 12px;
+                                &:hover {
+                                    color: #34AE6E;
+                                }
+                            }
+                        }
+                    }
+                    .search-list-2 {
+                        display: none;
+                        position: absolute;
+                        z-index: 88;
+                        width: 100%;
+                        max-height: 500px;
+                        overflow: auto;
+                        top: 100%;
+                        left: 0;
+                        background: #ffffff;
+                        box-shadow: 0 0 10px #999999;
+                        padding: 20px;
+                        ul {
+                            li {
+                                cursor: pointer;
+                                padding: 10px;
+                                span {
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    font-weight: 600;
+                                }
+                                a {
+                                    img {
+                                        width: 50px;
+                                        border-radius: 6px;
+                                        border: 1px solid #e9e7e7;
+                                        margin-right: 10px;
+                                    }
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    font-weight: 600;
+                                    color: #373E48;
+                                }
+                                &:hover {
+                                    background: #e9e7e7;
+                                    a {
+                                        color: #34AE6E;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cart-products {
+                margin-left: 20px;
+                button {
+                    cursor: pointer;
+                    position: relative;
+                    i {
+                        color: #777777;
+                        font-size: 18px;
+                    }
+                    &:hover {
+                        i {
+                            color: #34AE6E;
+                        }
+                    }
+                    .quantity-item {
+                        display: none;
+                        position: absolute;
+                        text-align: center;
+                        padding: 2px;
+                        top: -5px;
+                        right: -20px;
+                        font-size: 11px;
+                        background: #34AE6E;
+                        color: #ffffff;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                    }
+                }
+                .dropdown-cart {
+                    display: none;
+                    max-height: 600px;
+                    width: 280px;
+                    background: #ffffff;
+                    position: absolute;
+                    right: 0;
+                    top: 100%;
+                    z-index: 99;
+                    border-radius: 6px;
+                    box-shadow: 0 0 10px #999999;
+                    padding: 26px 20px 23px;
+                    .cart-item {
+                        position: relative;
+                        .no-product {
+                            position: absolute;
+                            z-index: 100;
+                            cursor: pointer;
+                            // display: none;
+                            width: 100%;
+                            height: 100%;
+                            padding: 21px 20px 19px;
+                            text-align: center;
+                            background: #ffffff;
+                            .fas {
+                                font-size: 50px;
+                                padding-top: 20px;
+                                color: #999999;
+                            }
+                            p {
+                                font-size: 16px;
+                                padding: 30px 0;
+                                color: #999999;
+                            }
+                        }
+                        .cart-list {
+                            overflow: auto;
+                            max-height: 380px;
+                            .product-content {
+                                img {
+                                    max-width: 67px;
+                                }
+                                h5 {
+                                    a {
+                                        font-family: 'Hind', sans-serif;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        transition: all 0.3s;
+                                        color: #f00432;
+                                        &:hover {
+                                            color: #34AE6E;
+                                        }
+                                    }
+                                }
+                                .cart-quantity {
+                                    color: #999999;
+                                    font-size: 14px;
+                                }
+                                .cart-price {
+                                    color: #f00432;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                }
+                                button {
+                                    position: relative;
+                                    font-size: 20px;
+                                    cursor: pointer;
+                                    transition: all .4s;
+                                    i {
+                                        position: absolute;
+                                        right: 0;
+                                        top: -10px;
+                                        font-size: 16px;
+                                        color: #f00432;
+                                        transition: all 0.3s;
+                                        &:hover {
+                                            color: #34AE6E;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .cart-total {
+                            margin-top: 20px;
+                            border-top: 1px solid #e9e7e7;
+                            padding: 10px 5px;
+                            .tt-text {
+                                font-weight: 700;
+                                color: #f00432;
+                                font-size: 14px;
+                                font-family: 'Fredoka One', sans-serif;
+                            }
+                            .sum-total {
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: #f00432;
+                            }
+                        }
+                        .cart-checks {
+                            margin-top: 22px;
+                            margin-bottom: 13px;
+                            .check-agreeItem2 {
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+                            label {
+                                font-size: 12px;
+                                padding-left: 10px;
+                                cursor: pointer;
+                                color: #f00432;
+                                transition: all 0.3s;
+                                &:hover {
+                                    color: #373E48;
+                                }
+                            }
+                        }
+                        .check-out2 {
+                            border-radius: 6px;
+                            background: #34ae6e;
+                            font-family: 'Fredoka One', sans-serif;
+                            color: #ffffff;
+                            font-size: 14px;
+                            font-weight: 400;
+                            position: relative;
+                            outline: none;
+                            padding: 6px 31px 4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            height: 40px;
+                            opacity: 0.5;
+                            transition: all 0.3s;
+                        }
+                        .view-cart {
+                            margin-top: 15px;
+                            text-align: center;
+                            .btn-viewCart {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #34AE6E;
+                                &:hover {
+                                    color: #f00432;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .user-icon {
+                margin-left: 20px;
+                position: relative;
+                .btn-user {
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    i {
+                        color: #777777;
+                        font-size: 18px;
+                    }
+                    &:hover {
+                        i {
+                            color: #34AE6E;
+                        }
+                    }
+                }
+                .dropdown-user {
+                    display: none;
+                    width: 280px;
+                    position: absolute;
+                    bottom: 0;
+                    right: -10px;
+                    transform: translateY(100%);
+                    background: #ffffff;
+                    box-shadow: 0 0 10px 0 #e9e7e7;
+                    padding: 33px 5px 27px 39px;
+                    z-index: 10;
+                    li {
+                        margin-bottom: 10px;
+                        a {
+                            font-size: 14px;
+                            color: #373E48;
+                            transition: all 0.3s;
+                            i {
+                                font-size: 12px;
+                                padding-right: 15px;
+                            }
+                            &:hover {
+                                color: #34AE6E;
+                            }
+                        }
+                    }
+                }
+            }
+            .setting-icon {
+                margin-left: 20px;
+                position: relative;
+                .setting-check {
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    i {
+                        color: #777777;
+                        font-size: 18px;
+                    }
+                    &:hover {
+                        i {
+                            color: #34AE6E;
+                        }
+                    }
+                }
+                .dropdown-inner2 {
+                    display: none;
+                    width: 220px;
+                    right: 0;
+                    bottom: 0;
+                    transform: translateY(100%);
+                    background: #ffffff;
+                    box-shadow: 0 0 10px 0 #e9e7e7;
+                    padding: 33px 5px 27px 39px;
+                    position: absolute;
+                    z-index: 10;
+                    li {
+                        a {
+                            color: #373E48;
+                            transition: all 0.3s;
+                            &:hover {
+                                color: #34AE6E;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: #f7f8fa;
+    .container {
+        h2 {
+            font-size: 18px;
+            line-height: 15px;
+            font-weight: 700;
+            font-family: 'Fredoka One', sans-serif;
+            padding-bottom: 25px;
+            color: #373E48;
+        }
+        p {
+            color: #8f949b;
+            font-size: 16px;
+            line-height: 23px;
+            padding: 3px 0;
+        }
+        form {
+            margin-top: 34px;
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            input {
+                width: 75%;
+                background: #ffffff;
+                color: #777777;
+                height: 40px;
+                font-size: 14px;
+                border: 1px solid #f7f8fa;
+                padding: 4px 12px 4px 15px;
+                font-family: 'Hind', sans-serif;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+            button {
+                width: 25%;
+                margin-left: -5px;
+                color: #ffffff;
+                background: #f00432;
+                border: 1px solid #f00432;
+                padding: 4px 31px 4px;
+                font-family: 'Fredoka One', sans-serif;
+                font-size: 14px;
+                height: 39px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                cursor: pointer;
+                &:hover {
+                    background: #94021f;
+                }
+            }
+        }
+        .icon-if {
+            margin-top: 30px;
+            a {
+                margin-right: 30px;
+                i {
+                    font-size: 22px;
+                    padding: 4px;
+                    line-height: 26px;
+                    color: #f00432;
+                    &:hover {
+                        color: #373E48;
+                    }
+                }
+            }
+        }
+        nav {
+            ul {
+                li {
+                    margin-bottom: 5px;
+                    a {
+                        color: #8f949b;
+                        font-size: 16px;
+                        line-height: 23px;
+                        padding: 3px 0;
+                    }
+                }
+            }
+        }
+        .copyright {
+            margin-top: 50px;
+            color: #868b90;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

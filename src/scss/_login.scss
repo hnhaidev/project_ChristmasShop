@@ -1,0 +1,214 @@
+.pageLogin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .container {
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            line-height: 44px;
+            letter-spacing: 0.03em;
+            font-weight: 700;
+            padding-bottom: 50px;
+            font-family: 'Fredoka One', sans-serif;
+            color: #f00432;
+        }
+        .customer {
+            border: 1px solid#e9e7e7;
+            padding: 32px 39px 20px;
+            height: 100%;
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+                padding-bottom: 14px;
+                font-weight: 700;
+                font-family: 'Fredoka One', sans-serif;
+                color: #f00432;
+            }
+            p {
+                margin-bottom: 16px;
+            }
+            .btn-create_account {
+                margin-top: 15px;
+                color: #34ae6e;
+                border: 2px solid #34ae6e;
+                height: 40px;
+                padding-left: 29px;
+                padding-right: 29px;
+                border-radius: 6px;
+                font-size: 14px;
+                font-family: 'Fredoka One', sans-serif;
+                font-weight: 400;
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                    color: #ffffff;
+                    background: #34ae6e;
+                }
+            }
+        }
+        .group_login {
+            border: 1px solid#e9e7e7;
+            padding: 32px 39px 20px;
+            height: 100%;
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+                padding-bottom: 14px;
+                font-weight: 700;
+                font-family: 'Fredoka One', sans-serif;
+                color: #f00432;
+            }
+            p {
+                margin-bottom: 16px;
+            }
+            form {
+                .group_user {
+                    margin-bottom: 16px;
+                    label {
+                        font-size: 14px;
+                        color: #f00432;
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 700;
+                        padding-bottom: 4px;
+                    }
+                    span {
+                        display: inline-block;
+                        float: right;
+                        color: #777777;
+                        padding-left: 5px;
+                    }
+                    input {
+                        width: 100%;
+                        background: #f7f8fa;
+                        font-size: 16px;
+                        border: 1px solid #f7f8fa;
+                        border-radius: 6px;
+                        padding: 11px 12px 10px 15px;
+                        font-family: 'Hind', sans-serif;
+                        color: #777777;
+                        transition: all 0.3s;
+                    }
+                }
+                .btn-login {
+                    margin-top: 15px;
+                    color: #34ae6e;
+                    border: 2px solid #34ae6e;
+                    height: 40px;
+                    padding-left: 29px;
+                    padding-right: 29px;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    font-family: 'Fredoka One', sans-serif;
+                    font-weight: 400;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    &:hover {
+                        color: #ffffff;
+                        background: #34ae6e;
+                    }
+                }
+                a {
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    float: right;
+                    color: #f00432;
+                    &:hover {
+                        color: #34ae6e;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pageCreateAccount {
+    margin: 50px 0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            line-height: 44px;
+            letter-spacing: 0.03em;
+            font-weight: 700;
+            padding-bottom: 50px;
+            font-family: 'Fredoka One', sans-serif;
+            color: #f00432;
+        }
+        .group_login {
+            width: 50%;
+            height: 100%;
+            border: 1px solid#e9e7e7;
+            padding: 32px 39px 20px;
+            height: 100%;
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+                padding-bottom: 14px;
+                font-weight: 700;
+                font-family: 'Fredoka One', sans-serif;
+                color: #f00432;
+            }
+            form {
+                .group_user {
+                    margin-bottom: 16px;
+                    label {
+                        font-size: 14px;
+                        color: #f00432;
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 700;
+                        padding-bottom: 4px;
+                    }
+                    span {
+                        display: inline-block;
+                        float: right;
+                        color: #777777;
+                        padding-left: 5px;
+                    }
+                    input {
+                        width: 100%;
+                        background: #f7f8fa;
+                        font-size: 16px;
+                        border: 1px solid #f7f8fa;
+                        border-radius: 6px;
+                        padding: 11px 12px 10px 15px;
+                        font-family: 'Hind', sans-serif;
+                        color: #777777;
+                        transition: all 0.3s;
+                    }
+                }
+                .group_bottom {
+                    margin-top: 15px;
+                    margin-bottom: 50px;
+                    .btn-create {
+                        margin-right: 20px;
+                        color: #34ae6e;
+                        border: 2px solid #34ae6e;
+                        height: 40px;
+                        padding-left: 29px;
+                        padding-right: 29px;
+                        border-radius: 6px;
+                        font-size: 14px;
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 400;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                        &:hover {
+                            color: #ffffff;
+                            background: #34ae6e;
+                        }
+                    }
+                    a {
+                        color: #34ae6e;
+                        &:hover {
+                            color: #f00432;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

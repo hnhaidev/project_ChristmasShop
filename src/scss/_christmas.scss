@@ -1,0 +1,149 @@
+.pageChristmas {
+    margin: 50px 0;
+    .container {
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            line-height: 44px;
+            letter-spacing: 0.03em;
+            font-weight: 700;
+            padding-bottom: 50px;
+            font-family: 'Fredoka One', sans-serif;
+            color: #f00432;
+        }
+        .tt-left {
+            padding-right: 60px;
+            h4 {
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 700;
+                padding: 35px 0 10px 0;
+                color: #f00432;
+                border-bottom: 1px solid #e9e7e7;
+                font-family: 'Fredoka One', sans-serif;
+            }
+            p {
+                margin: 16px 0;
+                font-size: 15px;
+                color: #373E48;
+            }
+            .read_more {
+                font-size: 14px;
+                line-height: 26px;
+                font-weight: 400;
+                color: #34AE6E;
+                font-family: 'Fredoka One', sans-serif;
+                transition: all 0.3s;
+                &:hover {
+                    color: #f00432;
+                }
+            }
+            .tag {
+                margin-bottom: 20px;
+            }
+            .tt-christmas {
+                // padding-top: 20px;
+                font-size: 16px;
+                line-height: 26px;
+                color: #373E48;
+                transition: all 0.3s;
+                &:hover {
+                    color: #34AE6E;
+                }
+            }
+            input {
+                width: 100%;
+                background: #f7f8fa;
+                font-size: 16px;
+                border: 1px solid #f7f8fa;
+                border-radius: 6px;
+                padding: 11px 12px 10px 15px;
+                font-family: 'Hind', sans-serif;
+                color: #777777;
+                transition: all 0.3s;
+            }
+            button {
+                width: 100%;
+                margin-top: 15px;
+                color: #ffffff;
+                background: #34AE6E;
+                height: 40px;
+                padding-left: 29px;
+                padding-right: 29px;
+                border-radius: 6px;
+                font-size: 14px;
+                font-family: 'Fredoka One', sans-serif;
+                font-weight: 400;
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                    background: #11472c;
+                }
+            }
+        }
+        .tt-right {
+            .item-christmas {
+                margin-bottom: 40px;
+                .tt-content {
+                    margin-left: 20px;
+                    h5 {
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        transition: all 0.3s;
+                        margin-bottom: 10px;
+                        a {
+                            color: #34AE6E;
+                        }
+                        &:hover {
+                            a {
+                                color: #f00432;
+                            }
+                        }
+                    }
+                    h2 {
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 40px;
+                        transition: all 0.3s;
+                        margin-bottom: 10px;
+                        a {
+                            color: #f00432;
+                        }
+                        &:hover {
+                            a {
+                                color: #34AE6E;
+                            }
+                        }
+                    }
+                    p {
+                        margin: 16px 0;
+                        font-size: 15px;
+                        color: #373E48;
+                    }
+                    p.tt-lopes {
+                        font-size: 12px;
+                    }
+                    button {
+                        margin-top: 15px;
+                        color: #ffffff;
+                        background: #34ae6e;
+                        height: 40px;
+                        padding-left: 29px;
+                        padding-right: 29px;
+                        border-radius: 6px;
+                        font-size: 14px;
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 400;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                        &:hover {
+                            background: #11472c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

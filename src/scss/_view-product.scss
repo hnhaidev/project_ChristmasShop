@@ -1,0 +1,570 @@
+.opacity-tt2 {
+    opacity: 0.5 !important;
+}
+
+.viewProduct {
+    margin: 50px 0;
+    .container {
+        .tt-gallery {
+            .list_gallery {
+                li {
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .zoom {
+            position: relative;
+            display: inline-block;
+            cursor: crosshair;
+            img {
+                display: block;
+                &::selection {
+                    background-color: transparent;
+                }
+            }
+        }
+        .tt-right {
+            padding-left: 20px;
+            p {
+                color: #f00432;
+                padding-bottom: 10px;
+                font-weight: 600;
+                font-size: 15px;
+                span {
+                    color: #999999;
+                }
+            }
+            .name {
+                font-size: 40px;
+                line-height: 42px;
+                letter-spacing: 0px;
+                font-weight: 700;
+                margin-top: 19px;
+                font-family: 'Fredoka One', sans-serif;
+                color: #f00432;
+            }
+            .price {
+                font-size: 30px;
+                line-height: 40px;
+                font-family: 'Fredoka One', sans-serif;
+                font-weight: 700;
+                color: #373e48;
+            }
+            .star-icon {
+                padding-top: 10px;
+                padding-bottom: 30px;
+                i {
+                    font-size: 12px;
+                }
+                .review-tt {
+                    margin-left: 10px;
+                    color: #34AE6E;
+                }
+            }
+            .btn-content {
+                .shipping,
+                .askAbout {
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: #34AE6E;
+                    i {
+                        padding-right: 10px;
+                    }
+                    &:hover {
+                        color: #f00432;
+                    }
+                }
+            }
+            .group_btn {
+                padding-top: 30px;
+                padding-bottom: 20px;
+                .plusMinus_quantity {
+                    position: relative;
+                    width: 30%;
+                    input {
+                        background: #f7f8fa;
+                        display: block;
+                        width: 100%;
+                        height: 50px;
+                        font-size: 14px;
+                        line-height: 1em;
+                        text-align: center;
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 700;
+                    }
+                    .btn_minus2 {
+                        cursor: pointer;
+                        &:hover {
+                            &::before {
+                                color: #f00432;
+                            }
+                        }
+                        &::before {
+                            position: absolute;
+                            left: 22%;
+                            bottom: 50%;
+                            transform: translateY(50%);
+                            content: '\f068';
+                            font-family: 'Font Awesome 5 Free';
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 50px;
+                            color: #e9e7e7;
+                            transition: all 0.3s;
+                        }
+                    }
+                    .btn_plus2 {
+                        cursor: pointer;
+                        &:hover {
+                            &::after {
+                                color: #f00432;
+                            }
+                        }
+                        &::after {
+                            position: absolute;
+                            right: 22%;
+                            bottom: 50%;
+                            transform: translateY(50%);
+                            content: '\f067';
+                            font-family: 'Font Awesome 5 Free';
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 50px;
+                            color: #e9e7e7;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+                .add_product2 {
+                    cursor: pointer;
+                    font-size: 16px;
+                    width: 65%;
+                    padding: 18px 23px;
+                    transition: all .4s;
+                    text-align: center;
+                    color: #ffffff;
+                    background: #1990c6;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-family: 'Fredoka One', sans-serif;
+                    &:hover {
+                        background: #136f99;
+                    }
+                }
+            }
+            .cart-checks {
+                .tt-agree {
+                    label {
+                        cursor: pointer;
+                        padding-left: 10px;
+                        padding-top: 4px;
+                        font-size: 13px;
+                        color: #f00432;
+                        &:hover {
+                            color: #373e48;
+                        }
+                    }
+                }
+                .check-outView {
+                    margin-top: 20px;
+                    border-radius: 6px;
+                    width: 100%;
+                    background: #f8dc68;
+                    font-family: 'Fredoka One', sans-serif;
+                    color: #373e48;
+                    font-size: 14px;
+                    font-weight: 500;
+                    position: relative;
+                    outline: none;
+                    padding: 19px 7px 17px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    height: 60px;
+                    opacity: 0.5;
+                    transition: all 0.3s;
+                }
+            }
+            .group-btn2 {
+                margin: 30px 0;
+                .wishlist,
+                .compare {
+                    cursor: pointer;
+                    margin-right: 30px;
+                    color: #34AE6E;
+                    font-size: 14px;
+                    i {
+                        margin-right: 5px;
+                    }
+                    &:hover {
+                        color: #f00432;
+                    }
+                }
+            }
+            .check-ttt {
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 26px;
+                color: #f00432;
+                cursor: pointer;
+                font-weight: 700;
+                font-family: 'Fredoka One', sans-serif;
+            }
+            .description-tt {
+                margin-top: 20px;
+                p {
+                    color: #999999;
+                }
+            }
+            .check-ttt2 {
+                padding-top: 20px;
+                border-top: 1px solid #e9e7e7;
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 26px;
+                color: #f00432;
+                cursor: pointer;
+                font-weight: 700;
+                font-family: 'Fredoka One', sans-serif;
+            }
+            .additional-tt {
+                margin-top: 20px;
+                display: none;
+            }
+            .review {
+                padding-top: 20px;
+                border-top: 1px solid #e9e7e7;
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 26px;
+                color: #f00432;
+                cursor: pointer;
+                font-weight: 700;
+                font-family: 'Fredoka One', sans-serif;
+            }
+        }
+    }
+}
+
+.btn-share {
+    background: #f7f8fa;
+    padding: 12px 5px 10px;
+    margin: 62px 0;
+    .container {
+        .full-share {
+            button {
+                cursor: pointer;
+                border-radius: 2px;
+                i {
+                    font-size: 30px;
+                    margin: 2px;
+                }
+            }
+            .twitter {
+                color: rgb(29, 161, 242);
+            }
+            .facebook {
+                color: rgb(59, 89, 152);
+            }
+            .pinterest {
+                color: rgb(203, 32, 39);
+            }
+            .linkedin {
+                color: rgb(0, 119, 181);
+            }
+            .plus {
+                color: rgb(255, 101, 80);
+            }
+        }
+    }
+}
+
+.related-products {
+    margin: 50px 0;
+    .container {
+        h2 {
+            font-size: 40px;
+            line-height: 42px;
+            font-weight: 700;
+            color: #f00432;
+            margin-bottom: 30px;
+            font-family: 'Fredoka One', sans-serif;
+        }
+        .owl_5 {
+            position: relative;
+            .owl-nav {
+                button {
+                    transition: all 0.3s;
+                    // visibility: hidden;
+                    // opacity: 0;
+                    &.owl-prev {
+                        position: absolute;
+                        top: -15%;
+                        right: 5%;
+                        cursor: pointer;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: #f7f8fa;
+                        color: #373E48;
+                        text-align: center;
+                        &:hover {
+                            background: #34AE6E;
+                            color: #ffffff;
+                        }
+                    }
+                    &.owl-next {
+                        position: absolute;
+                        top: -15%;
+                        right: 5px;
+                        cursor: pointer;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: #f7f8fa;
+                        color: #373E48;
+                        text-align: center;
+                        &:hover {
+                            background: #34AE6E;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+        .item {
+            height: 480px;
+            position: relative;
+            &:hover {
+                .img-box {
+                    a {
+                        i {
+                            visibility: visible;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+            .img-box {
+                position: absolute;
+                height: 280px;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                border-radius: 6px;
+                a {
+                    img {
+                        height: 100%;
+                    }
+                    i {
+                        visibility: hidden;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        font-size: 14px;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        background: #34AE6E;
+                        color: #ffffff;
+                        opacity: 0;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.3s;
+                        &:hover {
+                            background: #373E48;
+                        }
+                    }
+                }
+            }
+            .description {
+                width: 100%;
+                height: 160px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                .star-icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    i {
+                        font-size: 12px;
+                        color: #777777;
+                    }
+                }
+                h3 {
+                    font-family: Hind, sans-serif !important;
+                    width: 100%;
+                    height: 48px;
+                    position: absolute;
+                    top: 35px;
+                    left: 0;
+                    font-size: 16px;
+                    line-height: 22px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 25px;
+                    -webkit-line-clamp: 2;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    a {
+                        color: #373e48;
+                    }
+                    &:hover {
+                        a {
+                            color: #34AE6E;
+                        }
+                    }
+                }
+                p {
+                    position: absolute;
+                    bottom: 45px;
+                    left: 0;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #373E48;
+                    cursor: pointer;
+                }
+                button {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 10px 20px;
+                    background: #34AE6E;
+                    border-radius: 6px;
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    &:hover {
+                        background: #11553C;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.justify-product {
+    z-index: 101;
+    display: none;
+    background: #000000;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    .container {
+        .tt-fixed-product {
+            .tt-img {
+                max-width: 32px;
+                min-width: 32px;
+                top: 4px;
+                position: relative;
+            }
+            .tt-description {
+                margin-left: 14px;
+                h3 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #ffffff;
+                    font-weight: 400;
+                }
+                .tt-price {
+                    span {
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .tt-row-custom01 {
+            .plusMinus_quantity {
+                position: relative;
+                width: 30%;
+                input {
+                    background: #414141;
+                    color: #ffffff;
+                    height: 40px;
+                    display: block;
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 1em;
+                    text-align: center;
+                    font-family: 'Fredoka One', sans-serif;
+                    font-weight: 700;
+                    border-radius: 6px;
+                }
+                .btn_minus2 {
+                    cursor: pointer;
+                    &:hover {
+                        &::before {
+                            color: #f00432;
+                        }
+                    }
+                    &::before {
+                        position: absolute;
+                        left: 22%;
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        content: '\f068';
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 50px;
+                        color: #e9e7e7;
+                        transition: all 0.3s;
+                    }
+                }
+                .btn_plus2 {
+                    cursor: pointer;
+                    &:hover {
+                        &::after {
+                            color: #f00432;
+                        }
+                    }
+                    &::after {
+                        position: absolute;
+                        right: 22%;
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        content: '\f067';
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 50px;
+                        color: #e9e7e7;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+            .add_product2 {
+                height: 40px;
+                cursor: pointer;
+                font-size: 16px;
+                width: 60%;
+                transition: all .4s;
+                text-align: center;
+                color: #ffffff;
+                background: #1990c6;
+                border-radius: 5px;
+                font-weight: 400;
+                font-family: 'Fredoka One', sans-serif;
+                &:hover {
+                    background: #136f99;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,316 @@
+.page_cart {
+    .container {
+        .no_products {
+            height: 100vh;
+            .tt-content {
+                text-align: center;
+                .icon_cart {
+                    text-align: center;
+                    i {
+                        font-size: 100px;
+                        opacity: 0.5;
+                    }
+                }
+                h1 {
+                    font-size: 34px;
+                    line-height: 44px;
+                    font-family: 'Fredoka One', sans-serif;
+                    color: #f00432;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                button {
+                    margin-top: 20px;
+                    cursor: pointer;
+                    color: #ffffff;
+                    background: #34ae6e;
+                    height: 40px;
+                    padding-left: 29px;
+                    padding-right: 29px;
+                    border-radius: 6px;
+                    font-family: 'Fredoka One', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    transition: all 0.3s;
+                    &:hover {
+                        background: #113d26;
+                    }
+                }
+            }
+        }
+        .yes_products {
+            display: none;
+            h1 {
+                font-size: 34px;
+                line-height: 44px;
+                font-family: 'Fredoka One', sans-serif;
+                color: #f00432;
+                text-align: center;
+                margin: 40px 0;
+            }
+            .shopping_cart {
+                .product_cart {
+                    ul {
+                        li {
+                            border-top: 1px solid #e9e7e7;
+                            padding: 20px 0;
+                            a {
+                                font-size: 13px;
+                                font-weight: 600;
+                                color: #f00432;
+                                &:hover {
+                                    color: #34ae6e;
+                                }
+                            }
+                            span {
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: #f00432;
+                                font-family: 'Fredoka One', sans-serif;
+                            }
+                            .plusMinus_quantity {
+                                position: relative;
+                                input {
+                                    background: #f7f8fa;
+                                    display: block;
+                                    width: 70%;
+                                    height: 50px;
+                                    font-size: 14px;
+                                    line-height: 1em;
+                                    text-align: center;
+                                    font-family: 'Fredoka One', sans-serif;
+                                    font-weight: 700;
+                                }
+                                .btn_minus {
+                                    cursor: pointer;
+                                    &:hover {
+                                        &::before {
+                                            color: #f00432;
+                                        }
+                                    }
+                                    &::before {
+                                        position: absolute;
+                                        right: 80%;
+                                        bottom: 50%;
+                                        transform: translatey(50%);
+                                        content: '\f068';
+                                        font-family: 'Font Awesome 5 Free';
+                                        font-weight: bold;
+                                        font-size: 12px;
+                                        line-height: 50px;
+                                        color: #e9e7e7;
+                                        transition: all 0.3s;
+                                    }
+                                }
+                                .btn_plus {
+                                    cursor: pointer;
+                                    &:hover {
+                                        &::after {
+                                            color: #f00432;
+                                        }
+                                    }
+                                    &::after {
+                                        position: absolute;
+                                        right: 42%;
+                                        bottom: 50%;
+                                        transform: translatey(50%);
+                                        content: '\f067';
+                                        font-family: 'Font Awesome 5 Free';
+                                        font-weight: bold;
+                                        font-size: 12px;
+                                        line-height: 50px;
+                                        color: #e9e7e7;
+                                        transition: all 0.3s;
+                                    }
+                                }
+                            }
+                            .delete-products {
+                                cursor: pointer;
+                                i {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: #f00432;
+                                    transition: all 0.3s;
+                                }
+                                &:hover {
+                                    i {
+                                        color: #34ae6e;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btn_shopCart {
+                        padding: 20px 0;
+                        border-top: 1px solid #e9e7e7;
+                        button {
+                            cursor: pointer;
+                            i {
+                                font-size: 14px;
+                                color: #34ae6e;
+                            }
+                            span {
+                                padding-left: 10px;
+                                font-size: 16px;
+                                color: #34ae6e;
+                                font-family: 'Fredoka One', sans-serif;
+                                font-weight: 500;
+                            }
+                        }
+                        .update_cart {
+                            margin-left: 40px;
+                            animation: updateCart 1s infinite linear backwards;
+                        }
+                    }
+                }
+                .load_shopCart {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    .border_col {
+                        border: 1px solid #e9e7e7;
+                        padding: 40px;
+                    }
+                    h5 {
+                        font-size: 22px;
+                        color: #f00432;
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 700;
+                    }
+                    h6 {
+                        font-size: 18px;
+                        color: #f00432;
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 700;
+                    }
+                    p {
+                        margin-top: 15px;
+                        font-size: 16px;
+                        color: #777777;
+                        font-weight: 400;
+                    }
+                    textarea {
+                        margin-top: 20px;
+                        height: 262px;
+                        width: 100%;
+                        border-radius: 6px;
+                        background: #f7f8fa;
+                        font-size: 16px;
+                        border: 1px solid #34ae6e;
+                        padding: 11px 12px 10px 15px;
+                        font-family: 'Hind', sans-serif;
+                        color: #777777;
+                    }
+                    span {
+                        font-size: 18px;
+                        color: #f00432;
+                        font-family: 'Fredoka One', sans-serif;
+                        font-weight: 700;
+                    }
+                    .grandtotal {
+                        margin-top: 15px;
+                        span {
+                            font-size: 24px;
+                            color: #34ae6e;
+                        }
+                    }
+                    .agree {
+                        margin-top: 20px;
+                        .check-agreeItem3 {
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                        label {
+                            font-size: 12px;
+                            padding-left: 10px;
+                            cursor: pointer;
+                            color: #f00432;
+                            transition: all 0.3s;
+                            &:hover {
+                                color: #373E48;
+                            }
+                        }
+                    }
+                    .check-out3 {
+                        margin-top: 20px;
+                        border-radius: 6px;
+                        background: #34ae6e;
+                        font-family: 'Fredoka One', sans-serif;
+                        color: #ffffff;
+                        font-size: 14px;
+                        font-weight: 400;
+                        position: relative;
+                        outline: none;
+                        width: 100%;
+                        padding: 10px 31px 9px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        height: 40px;
+                        opacity: 0.5;
+                        transition: all 0.3s;
+                    }
+                    form {
+                        .group_country {
+                            margin-top: 15px;
+                            label {
+                                font-size: 14px;
+                                color: #f00432;
+                                font-family: 'Fredoka One', sans-serif;
+                                font-weight: 600;
+                            }
+                            select {
+                                width: 100%;
+                                padding: 15px 12px 16px 15px;
+                                cursor: pointer;
+                                border-color: #34ae6e;
+                                border-radius: 6px;
+                                color: #777777;
+                                background: #f7f8fa;
+                                font-family: 'Hind', sans-serif;
+                            }
+                        }
+                        .group_code {
+                            margin-top: 15px;
+                            label {
+                                font-size: 14px;
+                                color: #f00432;
+                                font-family: 'Fredoka One', sans-serif;
+                                font-weight: 600;
+                            }
+                            input {
+                                // border-color: #34ae6e;
+                                width: 100%;
+                                background: #f7f8fa;
+                                font-size: 16px;
+                                border: 1px solid #34ae6e;
+                                padding: 6px 12px 5px 15px;
+                                font-family: 'Hind', sans-serif;
+                                border-radius: 6px;
+                            }
+                        }
+                        button {
+                            margin-top: 20px;
+                            cursor: pointer;
+                            color: #34ae6e;
+                            border: 2px solid #34ae6e;
+                            height: 40px;
+                            padding-left: 29px;
+                            padding-right: 29px;
+                            width: 100%;
+                            border-radius: 6px;
+                            font-family: 'Fredoka One', sans-serif;
+                            font-size: 14px;
+                            font-weight: 400;
+                            transition: all 0.3s;
+                            &:hover {
+                                color: #ffffff;
+                                background: #34ae6e;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
