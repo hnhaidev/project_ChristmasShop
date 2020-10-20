@@ -1,39 +1,9 @@
-# FE Template
+Một project Front-end về shop cửa hàng với cách chức năng: 
 
-[![N|Solid](https://i.imgur.com/BmorCRp.png)](https://www.facebook.com/Cheatsomething)
+- add sản phẩm vào giỏ hàng
+- xem thông tin sản phẩm
+- tìm kiếm sản phẩm
+- xóa sản phẩm trong giỏ hàng 
+- checkout những những sản phẩm có trong giỏ
 
-FE template is a simple template for FE Developers,
-what i use..
-
-- HTML5
-- SCSS
-- JQUERY
-- GULP 4
-- FONT AWESOME 5
-- ....
-
-# New Features!
-
-> Do not wait; the time will never be 'just right.' Start where you stand
-> and work with whatever tools you may have at your command,
-> and better tools will be found as you go along.
-
-### Installation
-
-Install gulp-cli first (ignore it if you're already)
-
-```sh
-$ npm i -g gulp-cli
-```
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-$ cd fe-template
-$ npm i
-$ npm start
-```
-
-## License
-
-MIT
+...
