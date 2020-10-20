@@ -5,5 +5,10 @@ Một project Front-end về shop cửa hàng với cách chức năng:
 - tìm kiếm sản phẩm
 - xóa sản phẩm trong giỏ hàng 
 - checkout những những sản phẩm có trong giỏ
+- ...
 
-...
+Được sử dung: 
+- HTML5
+- SCSS/CSS
+- Javascript/jquery
+- ...
