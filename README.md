@@ -7,7 +7,7 @@ Một project Front-end về shop cửa hàng với cách chức năng:
 - checkout những những sản phẩm có trong giỏ
 - ...
 
-Được sử dung: 
+Được sử dụng: 
 - HTML5
 - SCSS/CSS
 - Javascript/jquery
